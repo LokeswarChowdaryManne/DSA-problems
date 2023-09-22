@@ -2,12 +2,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int randoms(int n) {
     int random_number = rand() % n;
     return random_number;
 }
-
 
 int partitionsRandom(vector<int>&  nums,int low,int high)
 {
@@ -55,7 +53,6 @@ int partitions(vector<int>&  nums,int low,int high)
     swap(nums[i+1],nums[high]);
     return i+1;
 }
-
 
 void quickSort(vector<int>& nums,int low,int high)
 {
